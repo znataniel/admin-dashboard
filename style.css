@@ -25,8 +25,28 @@ header {
   grid-area: header;
 }
 
+.searchbar > img {
+  height: 2rem;
+}
+
+.account-menu > img {
+  height: 2rem;
+}
+
+.account-menu > img.pfp {
+  height: 3rem;
+}
+
+.greeting > img.pfp {
+  height: 5rem;
+}
+
 aside.sidebar {
   grid-area: sidebar;
+}
+
+aside.sidebar img.logo {
+  height: 5rem;
 }
 
 aside.sidebar ul img {
