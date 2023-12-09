@@ -1,5 +1,18 @@
 * {
   box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 /* for debugging the layout */
@@ -23,30 +36,149 @@ body {
 
 header {
   grid-area: header;
+
+  padding: 1rem 5rem;
+
+  display: grid;
+  grid-template: 1fr 1fr / 2fr 1fr;
+  grid-template-areas:
+    "searchbar account-menu"
+    "greeting nav";
+}
+
+img.pfp {
+  height: 3rem;
+  border-radius: 50%;
+}
+.searchbar {
+  grid-area: searchbar;
+
+  display: flex;
+  align-items: center;
 }
 
 .searchbar > img {
   height: 2rem;
 }
 
+.searchbar > input[type="search"] {
+  height: 2rem;
+  margin: 0 2rem 0 1rem;
+  padding: 0 1rem;
+
+  flex: 1;
+
+  border-radius: 1rem;
+}
+
+.account-menu {
+  grid-area: account-menu;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 .account-menu > img {
   height: 2rem;
 }
 
-.account-menu > img.pfp {
+img.pfp {
   height: 3rem;
+  border-radius: 50%;
+}
+
+.greeting {
+  grid-area: greeting;
+
+  display: grid;
+  grid-template: 1rem 1fr / 1fr 10fr;
 }
 
 .greeting > img.pfp {
   height: 5rem;
+
+  margin-right: 1rem;
+
+  border-radius: 50%;
+
+  grid-row: 1 / -1;
+  grid-column: 1 / span 1;
+}
+
+.greeting p {
+  font-weight: bold;
+}
+
+.greeting p.full-name {
+  font-size: 1.5rem;
+}
+
+nav {
+  grid-area: nav;
+
+  display: grid;
+  align-items: center;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+nav ul li {
+  text-align: center;
+
+  background-color: lightblue;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-weight: bold;
 }
 
 aside.sidebar {
   grid-area: sidebar;
+
+  padding: 1rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+aside.sidebar > .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+}
+
+.title h1,
+.sidebar li a {
+  padding-left: 1rem;
 }
 
 aside.sidebar img.logo {
-  height: 5rem;
+  height: 4rem;
+}
+
+aside.sidebar > ul {
+  flex-direction: column;
+}
+
+aside.sidebar li {
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  padding-left: 1rem;
+
+  display: flex;
+  align-items: center;
 }
 
 aside.sidebar ul img {
@@ -55,4 +187,11 @@ aside.sidebar ul img {
 
 section.dashboard {
   grid-area: dashboard;
+
+  display: grid;
+  grid-template: repeat(2, 1fr) / 4fr 1fr;
+}
+
+.your-projects {
+  grid-row: 1 / -1;
 }

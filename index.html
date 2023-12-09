@@ -9,45 +9,49 @@
   <body>
     <header>
       <div class="searchbar">
-        <img src="lock.png" alt="" /> <input type="search" />
+        <img src="img/magnify.svg" alt="" /> <input type="search" />
       </div>
       <div class="account-menu">
-        <img src="lock.png" alt="Notification bell." />
-        <img src="lock.png" alt="Profile picture." class="pfp" />
+        <img src="img/lock.png" alt="Notification bell." />
+        <img src="img/pfp.png" alt="Profile picture." class="pfp" />
         <span class="full-name">Jorge Nitales</span>
       </div>
       <div class="greeting">
-        <img src="lock.png" alt="Profile picture." class="pfp" />
-        Hi there, <span class="full-name">Jorge Nitales</span>
+        <img src="img/pfp.png" alt="Profile picture." class="pfp" />
+        <p>Hi there,</p>
+        <p class="full-name">
+          Jorge Nitales
+          <span class="user-name">(@nitalesgeorge)</span>
+        </p>
       </div>
       <nav>
         <ul>
-          <li><a href="#">nav 1</a></li>
-          <li><a href="#">nav 2</a></li>
-          <li><a href="#">nav 3</a></li>
+          <a href="#"><li>nav 1</li></a>
+          <a href="#"><li>nav 2</li></a>
+          <a href="#"><li>nav 3</li></a>
         </ul>
       </nav>
     </header>
 
     <aside class="sidebar">
       <div class="title">
-        <img src="lock.png" alt="Epic logo" class="logo" />
+        <img src="img/lock.png" alt="Epic logo" class="logo" />
         <h1>Dashboard</h1>
       </div>
 
       <ul class="dashboard-sections">
-        <li><img src="lock.png" alt="" />section 1</li>
-        <li><img src="lock.png" alt="" />section 2</li>
-        <li><img src="lock.png" alt="" />section 3</li>
-        <li><img src="lock.png" alt="" />section 4</li>
-        <li><img src="lock.png" alt="" />section 5</li>
-        <li><img src="lock.png" alt="" />section 6</li>
+        <li><img src="img/lock.png" alt="" /><a href="#">Home</a></li>
+        <li><img src="img/lock.png" alt="" /><a href="#">Profile</a></li>
+        <li><img src="img/lock.png" alt="" /><a href="#">Messages</a></li>
+        <li><img src="img/lock.png" alt="" /><a href="#">History</a></li>
+        <li><img src="img/lock.png" alt="" /><a href="#">Tasks</a></li>
+        <li><img src="img/lock.png" alt="" /><a href="#">Communities</a></li>
       </ul>
 
       <ul class="account-sections">
-        <li><img src="lock.png" alt="" />acc-section 1</li>
-        <li><img src="lock.png" alt="" />acc-section 2</li>
-        <li><img src="lock.png" alt="" />acc-section 3</li>
+        <li><img src="img/lock.png" alt="" /><a href="#">Settings</a></li>
+        <li><img src="img/lock.png" alt="" /><a href="#">Support</a></li>
+        <li><img src="img/lock.png" alt="" /><a href="#">Privacy</a></li>
       </ul>
     </aside>
     <section class="dashboard">
@@ -113,6 +117,56 @@
           </p>
           <div class="actions"></div>
         </article>
+      </section>
+
+      <section class="announcements">
+        <h2>Announcements</h2>
+        <div class="announcement-container">
+          <article class="announcement">
+            <p class="announc-title">Announc 1</p>
+            <p class="announc-desc">
+              Lorem ipsum dolor sit amet, qui minim labore 1
+            </p>
+          </article>
+          <article class="announcement">
+            <p class="announc-title">Announc 2</p>
+            <p class="announc-desc">
+              Lorem ipsum dolor sit amet, qui minim labore 2
+            </p>
+          </article>
+          <article class="announcement">
+            <p class="announc-title">Announc 3</p>
+            <p class="announc-desc">
+              Lorem ipsum dolor sit amet, qui minim labore 3
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="trending">
+        <h2>Trending</h2>
+        <div class="trending-container">
+          <div class="trend">
+            <img src="img/pfp.png" alt="" class="pfp" />
+            <p class="user-name">User 1</p>
+            <p class="trend-name">Trend Name 1</p>
+          </div>
+          <div class="trend">
+            <img src="img/pfp.png" alt="" class="pfp" />
+            <p class="user-name">User 2</p>
+            <p class="trend-name">Trend Name 2</p>
+          </div>
+          <div class="trend">
+            <img src="img/pfp.png" alt="" class="pfp" />
+            <p class="user-name">User 3</p>
+            <p class="trend-name">Trend Name 3</p>
+          </div>
+          <div class="trend">
+            <img src="img/pfp.png" alt="" class="pfp" />
+            <p class="user-name">User 4</p>
+            <p class="trend-name">Trend Name 4</p>
+          </div>
+        </div>
       </section>
     </section>
   </body>
